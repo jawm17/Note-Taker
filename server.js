@@ -7,8 +7,8 @@ app.use(express.json());
 //Needed line below to include assets file
 app.use(express.static('public'));
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./public/routes/apiRoutes")(app);
+require("./public/routes/htmlRoutes")(app);
 
 app.listen(PORT, function () {
   console.log("App listening on PORT: " + PORT);
